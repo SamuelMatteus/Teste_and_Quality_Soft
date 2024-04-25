@@ -21,7 +21,7 @@ def calcular_imc(peso, altura):
 # A - ARESTAS
 # N - NÓS
 # C - CONEXÕES
-# SÃO 5 ARESTAS, 4 NÓS E UM COMPONENTE ÚNICO
+# SÃO 6 ARESTAS, 5 NÓS E UM COMPONENTE
 
 
 # V(G) - COMPLEXIDADE CICLOMÁTICA
