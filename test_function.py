@@ -1,12 +1,19 @@
+def calcular_imc(peso, altura):
 
-def check_number(number_input):
-    if number_input % 2 == 0:
-        print("This number is even")
+    imc = peso / (altura ** 2)
+
+    if imc < 18.5:
+        return "Abaixo do peso"
+    elif imc < 24.9:
+        return "Peso normal"
+    elif imc < 29.9:
+        return "Sobrepeso"
+    elif imc < 34.9:
+        return "Obesidade grau 1"
+    elif imc < 39.9:
+        return "Obesidade grau 2"
     else:
-        print("This number is odd")
-
-number_input = int(input("Who is number? "))
-check_number(number_input)
+        return "Obesidade grau 3"
 
 #O GRAFO DA FUNÇÃO ESTÁ EM GRAFE.TXT
 #Calculo para a complexidade ciclomática:
@@ -17,8 +24,8 @@ check_number(number_input)
 # SÃO 5 ARESTAS, 4 NÓS E UM COMPONENTE ÚNICO
 
 
-# V(G) - COMPLEXIDDE CICLOMÁTICA
+# V(G) - COMPLEXIDADE CICLOMÁTICA
 # V(G) = A - N + 2*C
-# V(G) = 5 - 4 + 2 * 1 = 3
+# V(G) = 6 - 5 + 2 * 1 = 3
 
 # SÃO 5 ARESTAS, 4 NÓS E UM COMPONENTE ÚNICO
